@@ -30,6 +30,26 @@ function App() {
     return () => window.removeEventListener('popstate', onPop)
   }, [])
 
+  useEffect(() => {
+    const isProjectsPage = route === '/projects'
+    document.title = isProjectsPage
+      ? 'Projects | Tronitix'
+      : 'Tronitix | Hardware, Software & IoT Innovation'
+
+    const description = isProjectsPage
+      ? 'Explore Tronitix hardware, software, IoT and AI projects.'
+      : 'Tronitix builds integrated hardware, software, IoT and AI solutions, from engineering prototypes to connected digital products.'
+    document.querySelector('meta[name="description"]')?.setAttribute('content', description)
+
+    let canonical = document.querySelector('link[rel="canonical"]')
+    if (!canonical) {
+      canonical = document.createElement('link')
+      canonical.setAttribute('rel', 'canonical')
+      document.head.appendChild(canonical)
+    }
+    canonical.setAttribute('href', `${window.location.origin}${window.location.pathname}`)
+  }, [route])
+
   const navigate = (path) => {
     if (path === route) return
     window.history.pushState({}, '', path)

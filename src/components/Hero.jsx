@@ -7,7 +7,7 @@ function Hero() {
       <div className="hero-grid container">
         <div className="hero-copy">
           <span className="eyebrow">HARDWARE • SOFTWARE • IoT • INNOVATION</span>
-          <h1>We turn <span>ideas</span> into real technology.</h1>
+          <h1>Tronitix turns <span>ideas</span> into real technology.</h1>
           <p>Tronitix builds integrated hardware and software solutions — from engineering prototypes to connected digital products.</p>
           <div className="hero-actions">
             <a className="btn" href="#products">Explore Our Work <ArrowRight size={18}/></a>

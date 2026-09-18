@@ -4,7 +4,7 @@ import {
 } from 'lucide-react'
 import MichealFranklinImg from '../img/MichealFranklin.png'
 import JaijothiImg from '../img/Jaijothi.png'
-import GodsonImg from '../img/godson.png'
+import GodsonImg from '../img/Godson.png'
 import MadhumithaImg from '../img/Madumitha.png'
 import BabishaImg from '../img/Babisha.png'
 import AarushImg from '../img/AarushJeimen.png'

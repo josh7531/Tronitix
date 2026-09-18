@@ -42,14 +42,16 @@ function Contact() {
           <div className="contact-detail">
             <MapPin />
             <span>
-              Stella Mary's College of Engineering,
-              Kanyakumari, Tamil Nadu, India
+              39 E/3-2, Faith Complex Anandan
+              Nagar, Medical College Road
+              Ranithottam, Nagercoil, Tamil Nadu
+              - 629001
             </span>
           </div>
 
           <div className="contact-detail">
             <Phone />
-            <span>+91 12345 67890</span>
+            <span>+91 9489309512</span>
           </div>
 
           <div className="contact-detail">

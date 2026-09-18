@@ -9,7 +9,7 @@ import MadhumithaImg from '../img/Madumitha.png'
 import BabishaImg from '../img/Babisha.png'
 import AarushImg from '../img/AarushJeimen.png'
 import AdlinImg from '../img/Adlin.png'
-//import AbinashImg from '../img/Abinash.png'
+import AbinashImg from '../img/Abinash.png'
 
 export const products = [
   {
@@ -132,53 +132,53 @@ export const team = [
     linkedin: 'https://www.linkedin.com/in/michael-franklin-45686a1a1'
   },
   {
-    name: 'Jai Jothi .K',
+    name: 'Jai Jothi K',
     role: 'CEO / Co-Founder',
     text: 'Expert in embedded IoT, PCB design, edge ML and FreeRTOS, building smart connected hardware systems.',
     image: JaijothiImg,
     linkedin: 'https://www.linkedin.com/in/jaijothi-kannan-6b2b5b253'
   },
   {
-    name: 'Godson .S',
+    name: 'Godson S',
     role: 'CTO / Co-Founder',
     text: 'Creative 3D designer, web app developer and product developer focused on functional digital solutions.',
     image: GodsonImg,
     linkedin: 'https://www.linkedin.com/in/godson-s-741a3a354'
   },
   {
-    name: 'Madhumitha',
+    name: 'Madhumitha V',
     role: 'CFO',
     text: 'Finance and business operations.',
     image: MadhumithaImg,
     linkedin: 'https://www.linkedin.com/in/madhumitha-v-a40713307'
   },
   {
-    name: 'Babisha .R',
+    name: 'Babisha R',
     role: 'HR',
     text: 'People and team operations.',
     image: BabishaImg,
     linkedin: 'https://www.linkedin.com/in/babisha5'
   },
   {
-    name: 'Aarush Jeimen .M',
+    name: 'Aarush Jeimen M',
     role: 'Hardware Project Manager',
     text: 'Hardware project coordination and development.',
     image: AarushImg,
     linkedin: 'https://www.linkedin.com/in/aarush-jeimen-m-606394389'
   },
   {
-    name: 'Adlin .T',
+    name: 'Adlin Dino T',
     role: 'Software Project Manager',
     text: 'Software project coordination and development.',
     image: AdlinImg,
     linkedin: 'https://www.linkedin.com/in/adlin-dino-t-a2b871277'
   },
   {
-    name: 'Abinash Micheal .M',
+    name: 'Abinash Michel M',
     role: 'R&D Engineer',
     text: 'Research and development of embedded systems, IoT and robotics solutions.',
-  //  image: AbinashImg,
-    linkedin: 'https://www.linkedin.com/in/abinash-micheal-m-606394389'
+    image: AbinashImg,
+    linkedin: 'https://www.linkedin.com/in/abinash-michel-m-1a229a427'
   }
 ]
 

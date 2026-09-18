@@ -26,7 +26,7 @@ function Footer() {
           <a href="#contact">Get a Quote</a>
         </div>
       </div>
-      <div className="container copyright">© 2026 Tronitix. All rights reserved.</div>
+      <div className="container copyright">© 2025 Tronitix. All rights reserved.</div>
     </footer>
   )
 }

@@ -40,6 +40,7 @@ function App() {
       ? 'Explore Tronitix hardware, software, IoT and AI projects.'
       : 'Tronitix builds integrated hardware, software, IoT and AI solutions, from engineering prototypes to connected digital products.'
     document.querySelector('meta[name="description"]')?.setAttribute('content', description)
+    document.querySelector('meta[property="og:url"]')?.setAttribute('content', `https://tronitix.in${window.location.pathname}`)
 
     let canonical = document.querySelector('link[rel="canonical"]')
     if (!canonical) {
@@ -47,7 +48,7 @@ function App() {
       canonical.setAttribute('rel', 'canonical')
       document.head.appendChild(canonical)
     }
-    canonical.setAttribute('href', `${window.location.origin}${window.location.pathname}`)
+    canonical.setAttribute('href', `https://tronitix.in${window.location.pathname}`)
   }, [route])
 
   const navigate = (path) => {

@@ -1,31 +1,35 @@
+import { useState } from 'react'
 import { ArrowRight, Mail, MapPin, Phone } from 'lucide-react'
 import SectionTitle from './SectionTitle'
 import emailjs from '@emailjs/browser'
 
 function Contact() {
+  const [sending, setSending] = useState(false)
+  const [status, setStatus] = useState('')
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault()
+    const form = e.currentTarget
+    setSending(true)
+    setStatus('')
 
-    emailjs
-      .sendForm(
+    try {
+      await emailjs.sendForm(
         'service_cwop4eo',
         'template_2jmc5mm',
-        e.target,
+        form,
         {
           publicKey: '9oYg_6MA5pX-SXKr2',
         }
       )
-      .then(
-        () => {
-          alert('Project request sent successfully!')
-          e.target.reset()
-        },
-        (error) => {
-          console.error('FAILED...', error)
-          alert('Failed to send request. Please try again.')
-        }
-      )
+      form.reset()
+      setStatus('Thanks for reaching out. Your project request has been sent.')
+    } catch (error) {
+      console.error('Project request could not be sent:', error)
+      setStatus('We couldn’t send your request right now. Please try again or email us directly.')
+    } finally {
+      setSending(false)
+    }
   }
 
   return (
@@ -42,21 +46,20 @@ function Contact() {
           <div className="contact-detail">
             <MapPin />
             <span>
-              39 E/3-2, Faith Complex Anandan
-              Nagar, Medical College Road
-              Ranithottam, Nagercoil, Tamil Nadu
-              - 629001
+              39 E/3-2, Faith Complex, Anandan Nagar,<br />
+              Medical College Road, Ranithottam,<br />
+              Nagercoil, Tamil Nadu 629001
             </span>
           </div>
 
           <div className="contact-detail">
             <Phone />
-            <span>+91 9489309512</span>
+            <a href="tel:+919489309512">+91 94893 09512</a>
           </div>
 
           <div className="contact-detail">
             <Mail />
-            <span>tronitix.official@gmail.com</span>
+            <a href="mailto:tronitix.official@gmail.com">tronitix.official@gmail.com</a>
           </div>
         </div>
 
@@ -71,6 +74,7 @@ function Contact() {
             <input
               name="name"
               type="text"
+              autoComplete="name"
               required
               placeholder="Enter your name"
             />
@@ -82,6 +86,7 @@ function Contact() {
             <input
               name="email"
               type="email"
+              autoComplete="email"
               required
               placeholder="Enter your email"
             />
@@ -110,14 +115,11 @@ function Contact() {
             ></textarea>
           </label>
 
-          <button
-            className="btn"
-            type="submit"
-          >
-            Send Project Request
+          <button className="btn" type="submit" disabled={sending}>
+            {sending ? 'Sending request…' : 'Send project request'}
             <ArrowRight size={18} />
           </button>
-
+          {status && <p className={`form-status ${status.startsWith('We couldn’t') ? 'error' : ''}`} role="status" aria-live="polite">{status}</p>}
         </form>
 
       </div>

@@ -1,4 +1,4 @@
-import { ArrowRight, Bot, BrainCircuit, Cpu, Network } from 'lucide-react'
+import { ArrowDown, ArrowRight, BrainCircuit } from 'lucide-react'
 import { companyHighlights, heroFloatingCards } from '../data/siteData'
 
 function Hero() {
@@ -6,14 +6,14 @@ function Hero() {
     <section id="home" className="hero">
       <div className="hero-grid container">
         <div className="hero-copy">
-          <span className="eyebrow">HARDWARE • SOFTWARE • IoT • INNOVATION</span>
-          <h1>Tronitix turns <span>ideas</span> into real technology.</h1>
-          <p>Tronitix builds integrated hardware and software solutions — from engineering prototypes to connected digital products.</p>
+          <span className="eyebrow"><span className="eyebrow-dot" /> ENGINEERING WHAT’S NEXT</span>
+          <h1>Ideas deserve to become <span>real things.</span></h1>
+          <p>We bring hardware, software and connected technology together to turn ambitious ideas into practical products.</p>
           <div className="hero-actions">
-            <a className="btn" href="#products">Explore Our Work <ArrowRight size={18}/></a>
-            <a className="btn btn-ghost" href="#contact">Start a Project</a>
+            <a className="btn" href="#contact">Let’s build something <ArrowRight size={18} aria-hidden="true" /></a>
+            <a className="text-link" href="#products">Explore our work <ArrowDown size={16} aria-hidden="true" /></a>
           </div>
-          <div className="hero-proof">
+          <div className="hero-proof" aria-label="How we work">
             {companyHighlights.map(item => (
               <div key={item.title}>
                 <strong>{item.title}</strong>
@@ -22,20 +22,22 @@ function Hero() {
             ))}
           </div>
         </div>
-        <div className="hero-visual">
-          <div className="orb orb-a"></div>
-          <div className="orb orb-b"></div>
+        <div className="hero-visual" aria-label="A connected technology system">
+          <div className="orb orb-a" aria-hidden="true"></div>
+          <div className="orb orb-b" aria-hidden="true"></div>
+          <div className="visual-caption"><span /> Connected by design</div>
           <div className="tech-card main-card">
-            <BrainCircuit size={54}/>
-            <span>Integrated Technology</span>
-            <strong>Where hardware meets software.</strong>
+            <div className="main-card-icon"><BrainCircuit size={30} aria-hidden="true" /></div>
+            <span>THE TRONITIX APPROACH</span>
+            <strong>One idea.<br />Every system working together.</strong>
+            <div className="card-signal" aria-hidden="true"><span /><span /><span /><span /><span /><span /><span /></div>
           </div>
           {heroFloatingCards.map((card, index) => {
             const Icon = card.icon
             const extraClass = ['one', 'two', 'three'][index] || ''
             return (
               <div className={`floating-card ${extraClass}`} key={card.label}>
-                <Icon size={22}/>
+                <Icon size={19} aria-hidden="true" />
                 <span>{card.label}</span>
               </div>
             )

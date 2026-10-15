@@ -2,15 +2,6 @@ import {
   BrainCircuit, Code2, Cpu, Fingerprint, FlaskConical, GraduationCap,
   Hospital, Lightbulb, Network, Recycle, Smartphone, CircuitBoard
 } from 'lucide-react'
-import MichealFranklinImg from '../img/MichealFranklin.png'
-import JaijothiImg from '../img/Jaijothi.png'
-import GodsonImg from '../img/Godson.png'
-import MadhumithaImg from '../img/Madumitha.png'
-import BabishaImg from '../img/Babisha.png'
-import AarushImg from '../img/AarushJeimen.png'
-import AdlinImg from '../img/Adlin.png'
-import AbinashImg from '../img/Abinash.png'
-
 export const products = [
   {
     title: 'Biometric Attendance',
@@ -91,26 +82,6 @@ export const products = [
       'Reduced administrative delays across key hospital processes',
       'Delivered a scalable management platform for healthcare teams'
     ]
-  },
-  {
-    title: 'AI Based Garbage Bin',
-    category: 'Hardware & AI',
-    icon: Recycle,
-    text: 'An AI-assisted waste-management concept that separates waste and monitors bin capacity. Currently under development.',
-    period: 'Jun 2024 - Ongoing',
-    summary: 'This project explores AI-driven waste segregation and smart bin monitoring for cleaner and more efficient waste handling.',
-    functions: [
-      'Waste classification using AI vision',
-      'Smart bin fill-level monitoring',
-      'Automatic segregation logic',
-      'Sensor and actuator control',
-      'Monitoring dashboard for waste management teams'
-    ],
-    achievements: [
-      'Built a functional research prototype concept',
-      'Combined AI, embedded systems, and sustainability goals',
-      'Created a strong base for future smart-city applications'
-    ]
   }
 ]
 
@@ -128,56 +99,56 @@ export const team = [
     name: 'Mr. Michael Franklin',
     role: 'Co-Founder',
     text: 'Assistant Professor & Head of the Department of Electronics and Communication Engineering',
-    image: MichealFranklinImg,
+    image: '/team/MichealFranklin.jpg',
     linkedin: 'https://www.linkedin.com/in/michael-franklin-45686a1a1'
   },
   {
     name: 'Jai Jothi K',
     role: 'CEO / Co-Founder',
     text: 'Expert in embedded IoT, PCB design, edge ML and FreeRTOS, building smart connected hardware systems.',
-    image: JaijothiImg,
+    image: '/team/Jaijothi.jpg',
     linkedin: 'https://www.linkedin.com/in/jaijothi-kannan-6b2b5b253'
   },
   {
     name: 'Godson S',
     role: 'CTO / Co-Founder',
     text: 'Creative 3D designer, web app developer and product developer focused on functional digital solutions.',
-    image: GodsonImg,
+    image: '/team/Godson.jpg',
     linkedin: 'https://www.linkedin.com/in/godson-s-741a3a354'
   },
   {
     name: 'Madhumitha V',
     role: 'CFO',
     text: 'Finance and business operations.',
-    image: MadhumithaImg,
+    image: '/team/Madumitha.jpg',
     linkedin: 'https://www.linkedin.com/in/madhumitha-v-a40713307'
   },
   {
     name: 'Babisha R',
     role: 'HR',
     text: 'People and team operations.',
-    image: BabishaImg,
+    image: '/team/Babisha.jpg',
     linkedin: 'https://www.linkedin.com/in/babisha5'
   },
   {
     name: 'Aarush Jeimen M',
     role: 'Hardware Project Manager',
     text: 'Hardware project coordination and development.',
-    image: AarushImg,
+    image: '/team/AarushJeimen.jpg',
     linkedin: 'https://www.linkedin.com/in/aarush-jeimen-m-606394389'
   },
   {
     name: 'Adlin Dino T',
     role: 'Software Project Manager',
     text: 'Software project coordination and development.',
-    image: AdlinImg,
+    image: '/team/Adlin.jpg',
     linkedin: 'https://www.linkedin.com/in/adlin-dino-t-a2b871277'
   },
   {
     name: 'Abinash Michel M',
     role: 'R&D Engineer',
     text: 'Research and development of embedded systems, IoT and robotics solutions.',
-    image: AbinashImg,
+    image: '/team/Abinash.jpg',
     linkedin: 'https://www.linkedin.com/in/abinash-michel-m-1a229a427'
   }
 ]

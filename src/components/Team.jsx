@@ -10,7 +10,13 @@ function Team({ team }) {
           {team.map(person => (
             <article className="team-card" key={person.name}>
               <div className="member-photo">
-                <img src={person.image} alt={person.name} onError={(e) => { e.currentTarget.style.display = 'none' }} />
+                <img
+                  src={person.image}
+                  alt={person.name}
+                  loading="lazy"
+                  decoding="async"
+                  onError={(e) => { e.currentTarget.style.display = 'none' }}
+                />
                 <span>{person.name.split(' ').map(x => x[0]).slice(0, 2).join('')}</span>
               </div>
               <div className="member-info">

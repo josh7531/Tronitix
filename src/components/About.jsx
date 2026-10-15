@@ -8,7 +8,7 @@ function About() {
       <div className="container two-col">
         <div>
           <SectionTitle eyebrow="ABOUT TRONITIX" title="Innovation through technology" />
-          <p className="lead">Tronitix is a startup focused on creating integrated hardware and software products that address today's challenges while exploring tomorrow's technology.</p>
+          <p className="lead">Based in Nagercoil, Tamil Nadu, Tronitix develops integrated hardware and software products to solve practical challenges with emerging technology.</p>
           <p>Our approach combines electronics, embedded systems, IoT, software and product development so that an idea can move from concept to a working prototype.</p>
           <div className="feature-list">
             {aboutFeatures.map(({ icon: Icon, title, text }) => (

@@ -15,7 +15,7 @@ function ProjectsPage({ products, navigate }) {
           <div className="section-title">
             <span className="eyebrow">SELECTED WORK</span>
             <h1>Built to solve real problems.</h1>
-            <p>Explore a selection of products and prototypes developed across hardware, software and connected technology.</p>
+            <p>Explore engineering projects built to solve real problems across hardware, software and connected technology.</p>
           </div>
         </div>
 

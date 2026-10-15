@@ -10,7 +10,7 @@
 
 Run `npm run build`. Vite creates the production bundle, then `scripts/prerender-seo.js` generates crawlable HTML for `/`, `/projects/`, and `404.html`. Deploy the complete `dist/` directory and configure the hosting provider to serve `404.html` with an HTTP 404 status.
 
-The included `vercel.json` and `public/_redirects` redirect `/projects` to its canonical `/projects/` URL on Vercel and Netlify, respectively.
+On Vercel, `vercel.json` permanently redirects `www.tronitix.in` to the canonical `tronitix.in` host (including project paths) and redirects `/projects` to `/projects/`. Add both hostnames to the Vercel project; the host-specific redirect only applies once `www.tronitix.in` points to that project. Netlify uses `public/_redirects` for `/projects`; configure `tronitix.in` as the primary domain in Netlify's Domain management and add `www.tronitix.in` as an alias so Netlify redirects it to the primary domain.
 
 ## SEO maintenance
 

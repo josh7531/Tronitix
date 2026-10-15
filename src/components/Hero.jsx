@@ -8,7 +8,7 @@ function Hero() {
         <div className="hero-copy">
           <span className="eyebrow"><span className="eyebrow-dot" /> ENGINEERING WHAT’S NEXT</span>
           <h1>Ideas deserve to become <span>real things.</span></h1>
-          <p>We bring hardware, software and connected technology together to turn ambitious ideas into practical products.</p>
+          <p>We believe ideas deserve to become real things. We bring hardware, software and connected technology together to turn ambitious concepts into practical products.</p>
           <div className="hero-actions">
             <a className="btn" href="#contact">Let’s build something <ArrowRight size={18} aria-hidden="true" /></a>
             <a className="text-link" href="#products">Explore our work <ArrowDown size={16} aria-hidden="true" /></a>

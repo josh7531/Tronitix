@@ -2,6 +2,28 @@
   "redirects": [
     {
       "source": "/projects",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.tronitix.in"
+        }
+      ],
+      "destination": "https://tronitix.in/projects/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.tronitix.in"
+        }
+      ],
+      "destination": "https://tronitix.in/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/projects",
       "destination": "/projects/",
       "permanent": true
     }
